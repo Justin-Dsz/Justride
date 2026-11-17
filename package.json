@@ -1,0 +1,22 @@
+{
+  "name": "ride-booking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/server.js",
+    "worker": "node worker/worker.js",
+    "billing": "node consumers/billing.js",
+    "ops": "node consumers/ops.js",
+    "load-test": "node scripts/load-test.js",
+    "test": "node --test test/events.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0",
+    "ioredis": "^6.0.0"
+  }
+}
